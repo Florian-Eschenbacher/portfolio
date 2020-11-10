@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import 'normalize.css';
 import Typography from '../styles/Typography';
+import GlobalStyles from '../styles/GlobalStyles';
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -28,6 +29,7 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
+      <GlobalStyles />
       <Typography />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
