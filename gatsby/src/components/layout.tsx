@@ -9,8 +9,13 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import 'normalize.css';
+import Typography from '../styles/Typography';
 
-const Layout = ({ children }) => {
+type LayoutProps = {
+  children?: React.ReactNode;
+};
+
+const Layout = ({ children }: LayoutProps) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,6 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Typography />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>{children}</main>

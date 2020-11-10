@@ -1,7 +1,11 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const Header = ({ siteTitle }) => (
+type HeaderProps = {
+  siteTitle: string;
+};
+
+const Header = ({ siteTitle }: HeaderProps) => (
   <header>
     <div>
       <h1>
