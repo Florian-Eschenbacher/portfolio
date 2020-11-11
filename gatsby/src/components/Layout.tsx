@@ -7,10 +7,27 @@
 
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 import Header from './Header';
 import 'normalize.css';
 import Typography from '../styles/Typography';
 import GlobalStyles from '../styles/GlobalStyles';
+import Footer from './Footer';
+
+const LayoutStyles = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  main {
+    margin-top: 5rem;
+    margin-bottom: auto;
+    align-self: center;
+  }
+`;
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -22,21 +39,23 @@ const Layout = ({ children }: LayoutProps) => {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
   `);
 
   return (
-    <>
+    <LayoutStyles>
       <GlobalStyles />
       <Typography />
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
-        <main>{children}</main>
-        <footer>footer</footer>
-      </div>
-    </>
+      <Header
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        description={data.site.siteMetadata?.description}
+      />
+      <main>{children}</main>
+      <Footer />
+    </LayoutStyles>
   );
 };
 
