@@ -7,7 +7,7 @@
 
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Header from './header';
+import Header from './Header';
 import 'normalize.css';
 import Typography from '../styles/Typography';
 import GlobalStyles from '../styles/GlobalStyles';
