@@ -6,7 +6,10 @@ const AboutPage = () => (
   <>
     <SEO title="About" />
     <h1>About Me</h1>
-    <p>about Page content</p>
+    <p>
+      I'm a Berlin based frontend web developer. My focus over the last few
+      years has mainly been on React-based web-apps or websites.
+    </p>
   </>
 );
 

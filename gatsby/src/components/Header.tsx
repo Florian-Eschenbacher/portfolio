@@ -7,6 +7,11 @@ const HeaderStyles = styled.header`
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+
+  @media (max-width: 900px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 type HeaderProps = {

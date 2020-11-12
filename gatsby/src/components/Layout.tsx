@@ -22,6 +22,11 @@ const LayoutStyles = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  @media (max-width: 1100px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   main {
     margin-top: 5rem;
     margin-bottom: auto;
