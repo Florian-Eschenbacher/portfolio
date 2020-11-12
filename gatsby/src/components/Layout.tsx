@@ -15,14 +15,16 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Footer from './Footer';
 
 const LayoutStyles = styled.div`
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   padding-top: 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  @media (max-width: 1100px) {
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 800px) {
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -30,7 +32,6 @@ const LayoutStyles = styled.div`
   main {
     margin-top: 5rem;
     margin-bottom: auto;
-    align-self: center;
   }
 `;
 

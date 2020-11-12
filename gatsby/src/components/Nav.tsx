@@ -12,7 +12,7 @@ const NavStyles = styled.nav`
 const Nav = () => (
   <NavStyles>
     <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
+    <Link to="/about">About Me</Link>
   </NavStyles>
 );
 

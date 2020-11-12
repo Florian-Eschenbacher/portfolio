@@ -25,6 +25,13 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
   }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: goldenrod;
+    }
+  }
 `;
 
 export default GlobalStyles;
