@@ -1,11 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
 import font from '../assets/fonts/Roboto-Regular.ttf';
+import mediumFont from '../assets/fonts/Roboto-Medium.ttf';
 
 const Typography = createGlobalStyle`
   @font-face {
     font-family: Roboto;
     src: url(${font});
+  }
+  @font-face {
+    font-family: RobotoMedium;
+    src: url(${mediumFont});
   }
   html {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;

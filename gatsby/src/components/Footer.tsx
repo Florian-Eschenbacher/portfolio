@@ -9,6 +9,7 @@ const FooterStyles = styled.footer`
   justify-content: space-around;
   margin: 2rem;
   box-sizing: border-box;
+  align-items: center;
 `;
 
 const IconLinkStyles = styled.a`
