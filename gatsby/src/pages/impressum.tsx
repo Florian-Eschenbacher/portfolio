@@ -1,9 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import SEO from '../components/SEO';
 
+const ImpressumStyles = styled.div`
+  h2,
+  h3 {
+    font-family: RobotoMedium;
+    margin-bottom: 0.8em;
+  }
+`;
+
 const ImpressumPage = () => (
-  <>
+  <ImpressumStyles>
     <SEO title="Impressum" />
     <h1>Impressum</h1>
     <div>
@@ -63,7 +72,7 @@ const ImpressumPage = () => (
         wir derartige Inhalte umgehend entfernen.
       </p>
     </div>
-  </>
+  </ImpressumStyles>
 );
 
 export default ImpressumPage;

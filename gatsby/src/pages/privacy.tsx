@@ -6,6 +6,7 @@ import SEO from '../components/SEO';
 const PrivacyStyles = styled.div`
   h3 {
     font-family: RobotoMedium;
+    margin-bottom: 0.8em;
   }
 `;
 
