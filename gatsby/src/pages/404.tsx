@@ -1,3 +1,4 @@
+import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 
 import SEO from '../components/SEO';
@@ -10,4 +11,4 @@ const NotFoundPage = () => (
   </>
 );
 
-export default NotFoundPage;
+export default injectIntl(NotFoundPage);

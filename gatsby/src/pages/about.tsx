@@ -1,16 +1,17 @@
 import React from 'react';
-
+import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import SEO from '../components/SEO';
 
 const AboutPage = () => (
   <>
     <SEO title="About" />
-    <h1>About Me</h1>
+    <h2>
+      <FormattedMessage id="about title" />
+    </h2>
     <p>
-      I'm a Berlin based frontend web developer. My focus over the last few
-      years has mainly been on React-based web-apps or websites.
+      <FormattedMessage id="about text" />
     </p>
   </>
 );
 
-export default AboutPage;
+export default injectIntl(AboutPage);

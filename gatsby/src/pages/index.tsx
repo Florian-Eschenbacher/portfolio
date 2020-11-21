@@ -1,14 +1,21 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
 import SEO from '../components/SEO';
+import Layout from '../components/Layout';
 
 const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <h2>Hi people</h2>
-    <p>Site content to be added...</p>
-  </>
+  <Layout>
+    <div>
+      <SEO title="Home" />
+      <h2>
+        <FormattedMessage id="home title" />
+      </h2>
+      <p>
+        <FormattedMessage id="home text" />
+      </p>
+    </div>
+  </Layout>
 );
 
-export default IndexPage;
+export default injectIntl(IndexPage);

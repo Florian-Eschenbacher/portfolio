@@ -1,3 +1,4 @@
+import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { HeaderStyles, TextRevealStyles } from '../styles/HeaderStyles';
 
@@ -18,4 +19,4 @@ const Header = ({ siteTitle, description }: HeaderProps) => (
   </HeaderStyles>
 );
 
-export default Header;
+export default injectIntl(Header);

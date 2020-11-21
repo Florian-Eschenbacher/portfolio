@@ -10,7 +10,7 @@ const PrivacyStyles = styled.div`
   }
 `;
 
-const AboutPage = () => (
+const Privacy = () => (
   <>
     <SEO title="About" />
     <h1>DatenschutzErklärung</h1>
@@ -369,4 +369,4 @@ const AboutPage = () => (
   </>
 );
 
-export default AboutPage;
+export default Privacy;
